@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Issued</title>
+  </head>
+  <body>
+    <h1>Book Issued</h1>
+    <form action="action_page.php" method="post">
+      <!-- Book Name -->
+      <div>
+        <label for="fname">Book Issued:</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Name of issued book"
+        />
+      </div>
+      <br />
+      <!-- Issued to -->
+      <div>
+        <label for="lname">Issued to:</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Name of Student"
+        />
+      </div>
+      <br />
+      <!-- Enrollment Number -->
+      <div>
+        <label for="eno">Enrollment number:</label>
+        <input
+          type="text"
+          name="eno"
+          id="eno"
+          placeholder="Enrollment No. of Student"
+          maxlength="8"
+        />
+      </div>
+      <br />
+      <!-- Issued Date -->
+      <div>
+        <label for="issued_date">Issued Date:</label>
+        <input type="date" name="issued_date" id="issued_date" />
+      </div>
+      <br />
+      <!-- Issued Till -->
+      <div>
+        <label for="issued_till">Issued Till:</label>
+        <input type="date" name="issued_till" id="issued_till" />
+      </div>
+      <br />
+      <!-- Reset and Submit Buttons -->
+      <div>
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
