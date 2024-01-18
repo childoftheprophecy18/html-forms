@@ -2,7 +2,7 @@
 
 Welcome to the Book Management System project! This repository contains HTML forms for managing a bookshelf and issuing books.
 
-## Book Shelf Form
+## Book Shelf Form  <a href="added books.html">Book Shelf Form</a>
 
 ### Introduction
 
@@ -14,7 +14,7 @@ The Book Shelf Form collects information about books, including the book name, I
 - Collects information such as book name, ID, author, edition, and price.
 - Provides reset and submit buttons for user interaction.
 
-## Book Issued Form
+## Book Issued Form   <a href="added issue.html">Book Issue Form</a>
 
 ### Introduction
 
