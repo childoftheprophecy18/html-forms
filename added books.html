@@ -1,41 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Shelf</title>
-    <style>
-      .book-issued-form {
-        max-width: 400px;
-        margin: auto;
-        padding: 20px;
-      }
-
-      /* Style the anchor as a button */
-      .button-like {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #007BFF; /* Button color */
-        color: #fff; /* Text color */
-        text-decoration: none; /* Remove underlines */
-        border-radius: 5px; /* Add some border-radius for rounded corners */
-        cursor: pointer;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Book Shelf</h1>
-    <form action="action_page.php" method="post" class="book-issued-form">
-      <!-- Your form elements... -->
-
-      <div>
-        <input type="reset" value="Reset" />
-        <input type="submit" value="Submit" />
-        <div class="button-like">
-          <a href="added issue.html">Book Issued Form</a>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Shelf</title>
+  <style>
+    .book-issued-form {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+    }
+    .button-like {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF; 
+      color: #fff; 
+      text-decoration: none;
+      border-radius: 5px; 
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Book Shelf</h1>
+  <form action="action_page.php" method="post" class="book-issued-form">
+    <div>
+      <label for="fname">Book Name:</label>
+      <input type="text" id="fname" name="fname" placeholder="Book Name" />
+    </div>
+    <br />
+    <div>
+      <label for="lname">Book Id:</label>
+      <input type="text" id="lname" name="lname" placeholder="Type Book Id" />
+    </div>
+    <br />
+    <div>
+      <label for="Authname">Author Name:</label>
+      <input
+        type="text"
+        name="Authname"
+        id="Authname"
+        placeholder="Book is written by"
+      />
+    </div>
+    <br />
+    <div>
+      <label for="edition">Book Edition:</label>
+      <input
+        type="number"
+        name="book_edition"
+        id="book_edition"
+        placeholder="Edition of the Book"
+      />
+    </div>
+    <br />
+    <div>
+      <label for="price">Book Price:</label>
+      <input
+        type="number"
+        name="book_price"
+        id="book_price"
+        placeholder="Price of The Book"
+      />
+    </div>
+    <br />
+    <div>
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" />
+      <div class="button-like">
+        <a href="added issue.html">Book Issued Form</a>
       </div>
-    </form>
-    <script src="bscript.js"></script>
-  </body>
+    </div>
+  </form>
+  <script src="bscript.js"></script>
+</body>
 </html>
